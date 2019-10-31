@@ -5,14 +5,14 @@ class NavBar extends Component {
     state= {}
     render() {
         return (
-            <nav>
-                <ul>
-                    <li><Link classname='link'> Home</Link></li>
-                    <li><Link classname='link'> About</Link></li>
-                    <li><Link classname='link'> Work</Link></li>
-                    <li><Link classname='link'> Contact</Link></li>
-                </ul>
-            </nav>
+            <div className="navBar">
+
+                    <p><Link classname='link'> Home</Link></p>
+                    <p><Link classname='link'> About</Link></p>
+                    <p><Link classname='link'> Work</Link></p>
+                    <p><Link classname='link'> Contact</Link></p>
+                
+            </div>
         );
     }
 }

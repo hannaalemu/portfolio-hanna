@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import data from '../myData';
 
 class Contact extends Component {
     state={ }
@@ -6,7 +7,7 @@ class Contact extends Component {
         return (
             <>
             <h1>Contact</h1>
-            <div className='contactContent'>
+            <div className='contact'>
                 <h2>Reach out to me.</h2>
             </div>
             </>

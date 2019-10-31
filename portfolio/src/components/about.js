@@ -11,7 +11,7 @@ class About extends Component {
                     About
                 </h1>
                 <p>
-                    {data.aboutText }
+                    {data.abouttext }
                 </p>
                 </div>
                 

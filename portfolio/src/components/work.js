@@ -8,7 +8,7 @@ class Work extends Component {
         return (
             <>
             <h1 className='heading'>Work</h1>
-            <div className='work-content'>
+            <div className='work'>
                 {data.projects.map((project) => (
                     <Project key={project.id}
                         title = {project.title}

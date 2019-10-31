@@ -1,0 +1,20 @@
+{
+  "name": "portfolio-hanna",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hannaalemu/portfolio-hanna.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hannaalemu/portfolio-hanna/issues"
+  },
+  "homepage": "https://github.com/hannaalemu/portfolio-hanna#readme"
+}
