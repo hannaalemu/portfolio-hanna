@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/hannaalemu/portfolio-hanna/issues"
   },
-  "homepage": "https://github.com/hannaalemu/portfolio-hanna#readme"
+  "homepage": "https://github.com/hannaalemu/portfolio-hanna#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "@fortawesome/react-fontawesome": "^0.1.7",
+    "gsap": "^2.1.3"
+  }
 }

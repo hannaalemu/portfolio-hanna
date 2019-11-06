@@ -1,17 +1,55 @@
 import React, { Component } from 'react';
-import { Link } from 'react-scroll';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 class NavBar extends Component {
-    state= {}
+    state = {  }
+    scrollToTop = () => {
+        scroll.scrollToTop();
+    };    
     render() {
         return (
             <div className="navBar">
-
-                    <p><Link classname='link'> Home</Link></p>
-                    <p><Link classname='link'> About</Link></p>
-                    <p><Link classname='link'> Work</Link></p>
-                    <p><Link classname='link'> Contact</Link></p>
-                
+        <nav>
+            <ul>
+                <li><Link
+                    className='link'
+                    activeClass="active"
+                    to="homw"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    onClick={this.scrollToTop}
+                >Home</Link></li>
+                <li><Link
+                    className='link'
+                    activeClass="active"
+                    to="about"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                >About</Link></li>
+                <li><Link
+                    className='link'
+                    activeClass="active"
+                    to="work"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                >Work</Link></li>
+                <li><Link
+                    className='link'
+                    activeClass="active"
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                >Contact</Link></li>
+            </ul>
+        </nav> 
             </div>
         );
     }

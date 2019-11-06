@@ -6,14 +6,12 @@ class About extends Component {
     render() {
         return (
             <div className='about'>
-                <div className='aboutContent'>
                 <h1>
                     About
                 </h1>
                 <p>
                     {data.abouttext }
                 </p>
-                </div>
                 
                 { data.showAboutImage ? <img src={data.aboutImage } alt='about image'></img> : null }
             </div>
