@@ -15,10 +15,9 @@ class Contact extends Component {
             <h1>Contact</h1>
                 <h2>Reach out to me !</h2>
                 <div className="contactIcons">
-
-                <FontAwesomeIcon icon={faEnvelope} />
-                <FontAwesomeIcon icon={faLinkedin} />
-                <FontAwesomeIcon icon={faGithub} />                 
+                <a href="mailto:hanna9alemu@gmail.com"><FontAwesomeIcon icon={faEnvelope} /></a>       
+                <a href="https://www.linkedin.com/in/hannaalemu/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /> </a>
+                <a href="https://github.com/hannaalemu" target="_blank"><FontAwesomeIcon icon={faGithub} /> </a>                
                 </div>
                 </div>
             </>
