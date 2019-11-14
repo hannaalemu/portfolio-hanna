@@ -44,9 +44,11 @@ li .link:hover{
 }
 
 .header {
-  width: 100%;
   height: 400px;
-  background-color: #E4FDE1;
+  margin: 20px;
+  background-image: url("/city2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   position: relative;
   margin-top: 120px;
   display: flex;
@@ -60,31 +62,45 @@ li .link:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #F45B69;
+  color: rgb(251, 251, 251);
+  opacity: .8;
 }
 
-h1 {
+.header > h1 {
   display: inline-block;
   margin: 10px;
   z-index: 1000px;
+  font-size: 60px;
 }
 .about {
-  width: 100%;
-  height: 450px;
-  background: rgb(0,212,255);
-  background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(244,91,105,1) 49%, rgba(2,0,36,1) 100%);
+  width: 80%;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10px;
-  padding: 20px;
+  padding: 30px;
 }
 
-.about > p {
-  color: rgb(255, 255, 255);
+.about > div > p {
+  color: black;
+  font-family: 'Niconne', cursive;
+  font-size: 30px;
 }
 
+.about > div > img {
+  width: auto;
+  height: 250px;
+  margin-right: 200px;
+}
+
+.aboutContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
 .project > img {
   height: 200px;
   width: 350px;
@@ -101,7 +117,7 @@ h1 {
   flex-wrap:wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 600px;
+  margin-top: 60px;
 }
 
 .workContent {
@@ -115,9 +131,9 @@ h1 {
 .project {
   width: 40%;
   font-size: 20px;
- 
   display: flex;
   flex-direction: column;
+  margin: 20px;
 }
 
 .projectLinks {
@@ -129,6 +145,12 @@ h1 {
 .projectLinks > a {
   text-decoration: none;
 }
+
+
+.projectLinks > a:hover {
+  color: blue;
+}
+
 .contact {
   display: flex;
   justify-content: center;
@@ -139,6 +161,7 @@ h1 {
   width: 80%;
   margin-bottom: 40px;
   margin-left: 100px;
+  margin-top: 60px;
 }
 
 .contactIcons {
@@ -148,42 +171,73 @@ h1 {
   flex-direction: row;
 }
 
-.frontend {
-  background-image: url("/frontend.png");
-  height: 500px;
-  width: 500px;
-  background-size: contain;
-  color: rgb(255, 255, 255);
-  position: absolute;
-  z-index: 900;
+.contactIcons > a {
+  color: black;
 
+}
+.contactIcons > a :hover {
+  color:grey;
+
+}
+.frontend {
+  display: flex;
+  background: rgb(0,212,255);
+  background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(244,91,105,1) 49%, rgba(2,0,36,1) 100%);
+  height: 300px;
+  width: 350px;
+  background-size: contain;
+  text-decoration: none;
+  display: inline-flex;
 
 }
 .backend {
-  background-image: url("/backend.png");
-  height: 500px;
-  width: 500px;
+  display: flex;
+  background: rgb(0,212,255);
+  background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(244,91,105,1) 49%, rgba(2,0,36,1) 100%);
+  height: 300px;
+  width: 350px;
   background-size: contain;
-  color: rgb(255, 255, 255);
-  position: absolute;
-z-index: 500;
+  display: inline-flex;
+
 
 }
-
-.tools {
-  background-image: url("/tools2.jpg");
-  height: 500px;
-  width: 500px;
+.tools {  
+  display: flex;
+  background: rgb(0,212,255);
+  background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(244,91,105,1) 49%, rgba(2,0,36,1) 100%);  height: 300px;
+  width: 350px;
   background-size: contain;
-  color: rgb(255, 255, 255);
-  position: absolute;
-  z-index: -1000;
+  display: inline-flex;
+
 }
 .skills {
   display:flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  margin-top: 400px;
+  margin-top: 40px;
   display: hidden;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+
 }
 
+.skills > h2 {
+  font-size: 50px;
+}
+.skillsContent {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.skillsContent > div >  ul {
+  font-family: 'Libre Baskerville', serif;
+  list-style-type: none;
+  text-align: center;
+  font-size: x-large;
+  color: rgb(236, 212, 212);
+  font-weight: 400;
+}

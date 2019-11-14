@@ -2,6 +2,7 @@ import caseHawk from './assets/case-hawk.png';
 import lazyChef from './assets/lazy-chef.png';
 import legoProject from './assets/lego-project.png';
 import starchaser from './assets/starchaser.png';
+import heart from'./assets/heart.png';
 
 export default {
     name: 'Hanna Alemu',
@@ -10,7 +11,8 @@ export default {
         'I am a Software Developer.',
     ],
     contactEmail:'hanna9alemu@gmail.com.com',
-    abouttext:"I'm passionate about creating software that solve problems, improves the user's quality of life, and is accessable to anyone. I believe in the power of inspiration, and mentorship.",
+    abouttext:'"I\'m passionate about creating software that solve problems, improves the user\'s quality of life, and is accessable to anyone. I believe in the power of inspiration, and mentorship."',
+    aboutImage: heart,
     projects: [
         {
             id: 1,
