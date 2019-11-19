@@ -14,6 +14,7 @@ function Header() {
     }, {})
 
         return (
+            <>
             <div className="header">
                 <div className="headerContent">
                 <h1 ref={el => one = el}>Innovate.</h1>
@@ -22,6 +23,7 @@ function Header() {
 
                 </div>
             </div>
+            </>
         )
     
 }

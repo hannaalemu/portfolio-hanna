@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from "react-scroll";
-
 
 class Project extends Component {
     state={ }
@@ -13,8 +11,8 @@ class Project extends Component {
                     <span>{this.props.details}</span>
 
                 <div className="projectLinks">
-                            <a href={`${this.props.gitHubUrl}`} target="_blank"> Github</a>
-                    <a href={`${this.props.deployedUrl}`} target="_blank" >Deployment</a>
+                            <a href={`${this.props.gitHubUrl}`} target="_blank" rel="noopener noreferrer"> Github</a>
+                    <a href={`${this.props.deployedUrl}`} target="_blank" rel="noopener noreferrer" >Deployment</a>
 
                 </div>
             </div>

@@ -9,6 +9,7 @@ class NavBar extends Component {
     };    
     render() {
         return (
+            <>
             <div className="navBar">
         <nav>
             <ul>
@@ -56,11 +57,12 @@ class NavBar extends Component {
                     smooth={true}
                     offset={-70}
                     duration={500}
-                    href={pdf} target="_blank"
+                    href={pdf} target="_blank" rel="noopener noreferrer"
                 >Resume</a></li>
             </ul>
         </nav> 
             </div>
+            </>
         );
     }
 }

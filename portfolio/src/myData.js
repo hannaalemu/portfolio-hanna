@@ -11,7 +11,7 @@ export default {
         'I am a Software Developer.',
     ],
     contactEmail:'hanna9alemu@gmail.com.com',
-    abouttext:'"I\'m passionate about creating software that solve problems, improves the user\'s quality of life, and is accessable to anyone. I believe in the power of inspiration, and mentorship."',
+    abouttext:'I\'m a Software Developer. I\'m passionate about creating software that solve problems, improve the user\'s quality of life, and is accessable to anyone. I\'m also enthusiastic about community service, mentorship, and improving diversity in the tech industry.',
     aboutImage: heart,
     projects: [
         {

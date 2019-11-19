@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import data from '../myData';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin, faJs } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import {faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -16,8 +14,8 @@ class Contact extends Component {
                 <h2>Reach out to me !</h2>
                 <div className="contactIcons">
                 <a href="mailto:hanna9alemu@gmail.com"><FontAwesomeIcon icon={faEnvelope} /></a>       
-                <a href="https://www.linkedin.com/in/hannaalemu/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /> </a>
-                <a href="https://github.com/hannaalemu" target="_blank"><FontAwesomeIcon icon={faGithub} /> </a>                
+                <a href="https://www.linkedin.com/in/hannaalemu/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /> </a>
+                <a href="https://github.com/hannaalemu" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /> </a>                
                 </div>
                 </div>
             </>
