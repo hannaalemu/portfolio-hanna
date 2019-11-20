@@ -6,6 +6,16 @@ body, html { overflow-x:hidden; }
   zoom: 1.0 ;
 }
 
+.navBar {
+  width: 100%;
+  z-index: 10000;
+}
+nav ul {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -16,8 +26,16 @@ h2 {
 }
 
 p, span {
-  font-family: 'Noto Sans JP', sans-serif;
-  text-indent: 2rem;
+  font-family: 'Alata', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 1.2em;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 29px;
+  letter-spacing: -.01em;
+  line-height: 1.5em;
+  text-align: center;
 }
 
 .aboutContent {
@@ -171,6 +189,9 @@ p, span {
     margin-top: 60px;
   }
 
+  .heading {
+    margin: 2rem;
+  }
   .work h1 {
     font-size: 3rem;
   }
@@ -179,14 +200,20 @@ p, span {
     flex-direction: row;
     flex-wrap:wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+
   }
 
   .project {
     width: 40%;
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    height: 600px;
   }
 
   .project h2 {
@@ -198,9 +225,13 @@ p, span {
     font-size: 1.5rem;
   }
   .projectLinks {
+    width: 90%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
+    align-self: flex-end;
+    margin-top: auto;
   }
 
   .projectLinks > a {
@@ -499,7 +530,11 @@ p, span {
   
  .tools li {
    font-size: 1.3rem;
-   margin: 2px;
+   margin: 1rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
   }
   
   .project {
@@ -508,12 +543,14 @@ p, span {
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
+      margin-top: 2em;
     }
     
   .project h2 {
     margin-top: 5px;
     font-size: 2rem;
     margin-bottom: 5px;
+    text-decoration: underline;
   }
 
   .project span {
@@ -580,4 +617,6 @@ p, span {
   .contact h2 {
     font-size: 1.5rem;
   }
+
+
 }
