@@ -1,17 +1,38 @@
 img { max-width: 100%; height: auto; }
 html { font-size:100%; } 
 body, html { overflow-x:hidden; }
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
 
-@media screen and (max-width: 2014px) {
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h2 {
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+p, span {
+  font-family: 'Noto Sans JP', sans-serif;
+  text-indent: 2rem;
+}
+
+.aboutContent {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  word-wrap: unset;
+}
+
+
+@media screen and (min-width: 768px) {
   #primary { width:67%; }
   #secondary { width:30%; margin-left:3%;}  
-
-
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 
   .navBar {
     width: 100%;
@@ -31,6 +52,7 @@ body, html { overflow-x:hidden; }
   nav li{
     display: inline-block;
     cursor: pointer;
+    font-size: 1.5rem;
 
   }
   nav li .link{
@@ -67,12 +89,14 @@ body, html { overflow-x:hidden; }
   }
 
   .headerContent {
-    font-size: 40px;
+    font-size: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     color: rgb(251, 251, 251);
-    opacity: .8;
+    opacity: .9;
+    font-family: 'Calistoga', cursive;
+
   }
 
   .header > h1 {
@@ -93,31 +117,36 @@ body, html { overflow-x:hidden; }
     margin-top: 80px;
   }
 
-  .aboutContent > h2 {
-    font-size: 40px;
-    margin-right: 150px;
+  .about h1 {
+    font-size: 4rem;
+    margin: 3rem;
+  }
+
+  .about > h2 {
+    font-size: 3rem;
     display: block; 
     text-overflow: ellipsis; 
     white-space: nowrap; 
-    overflow: hidden;
     margin-left: 130px;
     
   }
-  .about > p {
+  .aboutContent > p {
     color: black;
-    font-family: 'Niconne', cursive;
     font-size: 30px;
     margin-left: 80px;
+    display: inline-block;
+    margin-top: 3rem;
   }
 
   .aboutContent  > img {
-    width: auto;
-    height: 250px;
-    margin-left:20px;
+    display: none;
+    width: 30%;
+    height: auto;
   }
 
   .aboutContent {
     display: flex;
+    width: 100%;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -142,6 +171,9 @@ body, html { overflow-x:hidden; }
     margin-top: 60px;
   }
 
+  .work h1 {
+    font-size: 3rem;
+  }
   .workContent {
     display: flex;
     flex-direction: row;
@@ -152,12 +184,19 @@ body, html { overflow-x:hidden; }
 
   .project {
     width: 40%;
-    font-size: 20px;
     display: flex;
     flex-direction: column;
     margin: 20px;
   }
 
+  .project h2 {
+    font-size: 2rem;
+    margin: 2rem;
+  }
+
+  .project span {
+    font-size: 1.5rem;
+  }
   .projectLinks {
     display: flex;
     flex-direction: row;
@@ -166,6 +205,8 @@ body, html { overflow-x:hidden; }
 
   .projectLinks > a {
     text-decoration: none;
+    font-size: 1.5rem;
+    margin-top: 2rem;
   }
 
 
@@ -186,6 +227,16 @@ body, html { overflow-x:hidden; }
     margin-top: 60px;
   }
 
+  .contact h1 {
+    font-size: 3rem;
+    margin: 2rem;
+  }
+
+  .contact h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
   .contactIcons {
     display: flex;
     justify-content: center;
@@ -195,7 +246,6 @@ body, html { overflow-x:hidden; }
 
   .contactIcons > a {
     color: black;
-
   }
   .contactIcons > a :hover {
     color:grey;
@@ -225,8 +275,9 @@ body, html { overflow-x:hidden; }
 
   }
 
-  .skills > h2 {
-    font-size: 50px;
+  .tools > h3 {
+    font-size: 2rem;
+    margin: 2rem;
   }
   .skillsContent {
     display: flex;
@@ -255,10 +306,15 @@ body, html { overflow-x:hidden; }
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    margin:0%;
+    margin-top: 30px;
   }
 
   .headerContent > h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+
   }
 
   .navBar {
@@ -278,6 +334,7 @@ body, html { overflow-x:hidden; }
     top: 0;
     padding-top: 3%;
     padding-bottom: 4%;
+    height: 40px;
   }
 
   nav li{
@@ -285,14 +342,15 @@ body, html { overflow-x:hidden; }
     cursor: pointer;
     display: inline-block;
     margin: .5rem;
-    
-
+    font-size: 1.2rem;
+  
   }
+
   nav li .link{
     text-decoration: none;
     color: white;
     padding: 0%;
-    opacity: 0.5;
+    opacity: 0.9;
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -305,33 +363,62 @@ body, html { overflow-x:hidden; }
     opacity: 1;
   }
 
+  .header {
+    height: 300px;
+    background-image: url("assets/city2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .headerContent {
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(251, 251, 251);
+    opacity: .9;
+    font-family: 'Calistoga', cursive;
+
+  }
+
   .navBar ul {
     padding-inline-start: 0px;
   }
 
-  .about {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 120px;
-    height: 300px;
+  .header > h1 {
+    display: inline-block;
+    margin: 10px;
+    z-index: 1000px;
+    font-size: 60px;
   }
+
+  .about {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0;
+  }
+
   .about h1 {
     font-size: 2rem;
+    margin:2rem;
   }
 
-  .aboutContent {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .aboutContent h2 {
+ 
+  .about h2 {
     font-size: 1.5rem;
     margin-left: 0;
+    margin-right:0%;
   }
 
   .aboutContent img {
@@ -339,21 +426,158 @@ body, html { overflow-x:hidden; }
   }
 
   .aboutContent p {
-    font-size: .5rem;
-    display: inline-block;
+    margin-top: 10px;
+    font-size: 1rem;
+    display: flex;
+    max-width: 80%;
+    height: auto !important;
   }
+
   .skillsContent {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
+  .skills {
+    margin-top: 10px;
+  }
 
-  .project {
-    width: 100%;
+  .work {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap:wrap;
     justify-content: center;
     align-items: center;
+    margin-top: 60px;
+  }
+
+  .work h1 {
+    font-size: 3rem;
+    margin:2rem;
+  }
+  .workContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .tools {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .tools {  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  padding: 2rem;
+  background-color: rgb(214, 225, 245);
+}
+
+.skills {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  display: hidden;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+
+}
+ .tools h3 {
+   font-size: 2rem;
+  }
+  
+ .tools li {
+   font-size: 1.3rem;
+   margin: 2px;
+  }
+  
+  .project {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    
+  .project h2 {
+    margin-top: 5px;
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+
+  .project span {
+    margin-top: 10px;
+    font-size: 1rem;
+    display: flex;
+    max-width: 80%;
+    height: auto !important;
+    margin-left: 5px;
+  }
+
+  .projectLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .projectLinks a {
+    text-decoration: none;
+    margin: 10px;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .contact {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    height: 300px;
+    flex-direction: column;
+    background-color: #E4FDE1;
+    height: 300px;
+  }
+
+  .contactIcons a {
+    font-size: 1rem;
+    color: black;
+
+  }
+
+  .contactIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .svg-inline--fa {
+    font-size: 3.5rem;
+    margin:1rem;
+
+  }
+
+  .contact h1 {
+    margin-top: 2px;
+    font-size: 2rem;
+    margin-bottom: 5px;
+    
+  }
+
+  .contact h2 {
+    font-size: 1.5rem;
   }
 }

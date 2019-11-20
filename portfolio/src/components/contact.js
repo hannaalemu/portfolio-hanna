@@ -11,7 +11,7 @@ class Contact extends Component {
             <>
             <div className='contact'>
             <h1>Contact</h1>
-                <h2>Reach out to me !</h2>
+                <h2>Reach out to me! </h2>
                 <div className="contactIcons">
                 <a href="mailto:hanna9alemu@gmail.com"><FontAwesomeIcon icon={faEnvelope} /></a>       
                 <a href="https://www.linkedin.com/in/hannaalemu/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /> </a>

@@ -10,16 +10,18 @@ class About extends Component {
                     About
                 </h1>
 
+               <h2>Hi, I'm Hanna. Nice to meet you!</h2>
+               
                 <div className="aboutContent">
 
-               <h2>Hi, I'm Hanna. Nice to meet you!</h2>
 
                 <img src={data.aboutImage } alt='about'></img>
                
-                </div>
                 <p>
                     {data.abouttext }
                 </p>
+                
+                </div>
                 
 
             </div>
