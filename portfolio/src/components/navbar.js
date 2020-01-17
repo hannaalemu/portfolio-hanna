@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
-import pdf from '../resume.pdf';
 
 class NavBar extends Component {
     state = {  }
@@ -11,7 +10,7 @@ class NavBar extends Component {
         return (
             <>
             <div className="navBar">
-        <nav>
+        <nav className="navBar">
             <ul>
                 <li><Link
                     className='link'
@@ -57,7 +56,7 @@ class NavBar extends Component {
                     smooth={true}
                     offset={-70}
                     duration={500}
-                    href={pdf} target="_blank" rel="noopener noreferrer"
+                    href='https://drive.google.com/file/d/1kWsyPn97Vl5AC35UQsjhdpZX1RvqkURn/view?usp=sharing' target="_blank" rel="noopener noreferrer"
                 >Resume</a></li>
             </ul>
         </nav> 

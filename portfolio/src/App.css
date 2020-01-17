@@ -354,7 +354,7 @@ p, span {
     background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(17,75,95,1) 47%, rgba(2,0,36,1) 95%);
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     color: wheat;
     align-items: center;
     position:fixed;
