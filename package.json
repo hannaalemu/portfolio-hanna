@@ -1,0 +1,27 @@
+{
+  "name": "portfolio-hanna",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hannaalemu/portfolio-hanna.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hannaalemu/portfolio-hanna/issues"
+  },
+  "homepage": "https://github.com/hannaalemu/portfolio-hanna#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "@fortawesome/react-fontawesome": "^0.1.7",
+    "gsap": "^2.1.3",
+    "scrollmagic": "^2.0.7"
+  }
+}
